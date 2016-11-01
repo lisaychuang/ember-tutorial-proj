@@ -1,0 +1,11 @@
+<h2> {{lisaRepo.name}} Contributors</h2>
+
+
+<ul class='contributor-list'>
+{{#each model as |contributor|}}
+{{log contributor}} <!-- this logs out contributor object-->
+<li> {{contributor.login}} </li>
+{{/each}}
+</ul>
+
+{{outlet}}

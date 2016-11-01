@@ -1,0 +1,11 @@
+<h2> {{lisaRepo.name}} Issues</h2>
+
+{{log model}} <!-- this logs out issue object-->
+
+<ul class='issue-list'>
+	{{#each model as |issue|}}
+	<li> {{issue.title}} </li>
+	{{/each}}
+</ul>
+
+{{outlet}}

@@ -1,0 +1,11 @@
+<h2> {{org.login}} repos</h2>
+
+<ul>
+{{#each content as |r|}}
+	{{github-repo 
+	repo=r}}
+{{/each}}
+
+</ul>
+
+{{outlet}}
